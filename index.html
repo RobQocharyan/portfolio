@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,200&family=Neonderthaw&family=Syne+Tactile&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__avatar">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <div class="user__content">
+              <div class="user__name">
+                Robert <br />
+                Qocharyan
+              </div>
+              <div class="user__prof">Web FrontEnd Developer</div>
+            </div>
+          </div>
+          <nav class="nav" id="nav">
+            <a class="nav__link"  href="#">Work</a>
+            <a class="nav__link" href="#">About Me</a>
+            <a class="nav__link" href="#">Blog</a>
+            <a class="nav__link" href="#">Contact</a>
+            <a data-modal="#modal_hire_me" class="nav__link nav__link--btn" href="#" >hier me</a>
+          </nav>
+
+          <button type="button" class="burger" id="navToggle">
+              <img class="burger__icon" src="./images/bars-solid.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="conteiner">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Hello i'm</h2>
+            <h1 class="intro__title">Robert Qocharyan</h1>
+            <div class="intro__text">Web FrontEnd Developer</div>
+            <div class="social">
+              <a class="social__link" target="_blank" href="https://www.facebook.com/robert.qocharyan.9">
+                <img src="images/facebook.png" alt="" />
+              </a>
+              <a class="social__link" target="_blank" href="#">
+                <img src="images/instagram.png" alt="" />
+              </a>
+              <a class="social__link" target="_blank" href="https://github.com/RobQocharyan">
+                <img src="images/github-sign.png" alt="" />
+              </a>
+              <a class="social__link" target="_blank" href="https://www.linkedin.com/in/robert-qocharyan-92a112243/">
+                <img src="images/linkedin.png" alt="" />
+              </a>
+              <a class="social__link" target="_blank" href="#">
+                <img src="images/twitter.png" alt="" />
+              </a>
+              <a class="social__link" target="_blank" href="#">
+                <img src="images/behance.png" alt="" />
+              </a>
+            </div>
+            <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
+            <button class="btn" type="button" data-modal="#modal_resume">See my Resume</button>
+          </div>
+
+          <img class="intro__photo" src="./images/photo.png" alt="" />
+        </div>
+        <!-- /.intro__inner  -->
+      </div>
+      <!-- /.conteiner -->
+    </section>
+
+    <!-- Works   -->
+    <div class="works">
+      <div class="conteiner">
+        <div class="works__nav">
+          <a class="works__nav-link" href="#" data-filter="all">All</a>
+          <a class="works__nav-link" href="#" data-filter="app">App</a>
+          <a class="works__nav-link" href="#" data-filter="websites">Websites</a>
+          <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+          <div class="portfolio__col" data-cat="websites">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/web-site2.png" alt="" />
+              <div class="work__content">
+                <div class="work-cat">category: websites</div>
+                <div class="work__title">
+                  Project Data
+                  <time class="work__date" datetime="2019-11-22 19:20"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__col" data-cat="websites">
+            <div class="work" data-modal="#modal_project_2">
+              <img class="work__image" src="./images/ist1.png" alt="" />
+              <div class="work__content">
+                <div class="work-cat">category: websites</div>
+                <div class="work__title">
+                  Project Data
+                  <time class="work__date" datetime="2019-11-22 19:20"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+          
+        </div><!-- /.portfolio   -->
+          <div class="text__center">
+            <a class="btn btn--sm" href="#">Load more work</a>
+          </div>
+      </div>
+      <!-- /.conteiner   -->
+    </div>
+    <!-- /.works   -->
+
+
+    <!-- about -->
+    <section class="about">
+      <div class="conteiner">
+        <div class="about__iner">
+
+          <div class="about__photo">
+            <img class="img" src="./images/designer_photo.png" alt="">
+          </div>
+
+          <div class="about__content">
+            <h3 class="about__title">About me</h3>
+            <h2 class="about__bigtitle">Who am i</h2>
+            <div class="about__text">
+              <p>I study at Yerevan State University in the Faculty of Informatics and Applied Mathematics. I have been programming for almost 1.5 years. I am a FrontEnd developer by profession. 
+
+                I am goal-oriented and conscientious, I treat the tasks in front of me with high responsibility. I am demanding of myself, especially when it comes to the implementation of goals and work. 
+                
+                In my free time, I play chess and football.
+
+              </p>
+             
+            </div>
+            <a data-modal="#modal_hire_me" class="btn" href="#" >Hire Me</a>
+            <button data-modal="#modal_resume" class="btn" type="button">See my Resume</button>
+
+          </div><!-- /.about__content   -->
+
+        </div><!-- /.about__inner   -->
+
+
+
+      </div>   <!-- /.conteiner   -->
+    </section>    
+
+<!-- reviews -->
+    <!-- <div class="reviews">
+        <div class="conteiner">
+          <div class="reviews__item">
+            <div class="reviews__text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+            </div>
+            <div class="reviews__author">
+              <img class="reviews__photo" src="./images/golf-ball.png" alt="">
+              <div class="reviews__name">Eduard M. brooks</div>
+              <div class="reviews__copany">Marceting House</div>
+              <div class="reviews__rating">
+                <img class="reviews__star" src="./images/star.png" width="13" height="13" alt="">
+                <img class="reviews__star" src="./images/star.png" width="13" height="13" alt="">
+                <img class="reviews__star" src="./images/star.png" width="13" height="13" alt="">
+                <img class="reviews__star" src="./images/star.png" width="13" height="13" alt="">
+                <img class="reviews__star reviews__star--unactive" src="./images/star.png" width="13" height="13" alt="">
+              </div>
+            </div>
+
+          </div> 
+         /.reviews__item -->
+
+        </div><!-- /.conteiner -->
+    </div> 
+    <!-- /.reviews -->
+
+    <!-- News -->
+    <!-- <section class="news">
+      <div class="conteiner">
+          <div class="news__header">
+            <h3 class="news__title">read me</h3>
+            <div class="news__text">somtimes i write something smart</div>
+          </div>
+
+          <div class="articles">
+            <div class="articles__col">
+              <div class="articles__item">
+                <div class="articles__header">
+                  <time class="articles__date">
+                    10 <br> june
+                  </time>
+                  <a href="#">
+                    <img class="articles__photo" src="./images/golf-ball.png" alt="">
+                  </a>
+                </div>
+                <div class="articles__content">
+                  <h4 class="articles__title">
+                    <a href="#">Then the best app in 2022</a> 
+                  </h4>
+
+                    <div class="articles__cat">Category</div>
+                    <div class="articles__text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--sm">Read more</a>
+
+              </div>
+            </div>
+            <div class="articles__col">
+              <div class="articles__item">
+                <div class="articles__header">
+                  <time class="articles__date">
+                    10 <br> june
+                  </time>
+                  <a href="#">
+                    <img class="articles__photo" src="./images/golf-ball.png" alt="">
+                  </a>
+                </div>
+                <div class="articles__content">
+                  <h4 class="articles__title">
+                    <a href="#">Then the best app in 2022</a> 
+                  </h4>
+
+                    <div class="articles__cat">Category</div>
+                    <div class="articles__text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--sm">Read more</a>
+
+              </div>
+            </div>
+            <div class="articles__col">
+              <div class="articles__item">
+                <div class="articles__header">
+                  <time class="articles__date">
+                    10 <br> june
+                  </time>
+                  <a href="#">
+                    <img class="articles__photo" src="./images/golf-ball.png" alt="">
+                  </a>
+                </div>
+                <div class="articles__content">
+                  <h4 class="articles__title">
+                    <a href="#">Then the best app in 2022</a> 
+                  </h4>
+
+                    <div class="articles__cat">Category</div>
+                    <div class="articles__text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--sm">Read more</a>
+
+              </div>
+            </div>
+            
+           
+            
+          </div> /.articles -->
+
+          <!-- <div class="news__footer">
+            <a class="news__link" href="#">See more posts</a>
+          </div> -->
+      </div><!-- /.conteiner -->
+    </section> 
+
+<!-- footer -->
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="footer__inner">
+          <div class="footer__credits">
+            <div class="footer__copyright">
+              &copy; 2022  UI43 - free Templates
+            </div>
+            <div class="footer__social">
+              <a href="https://www.facebook.com/robert.qocharyan.9" target="_blank">
+                <img src="images/facebook.png" width="24" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/instagram.png" width="24" alt="" />
+
+              </a>
+              <a href="https://github.com/RobQocharyan" target="_blank">
+                <img src="images/github-sign.png" width="24" alt="" />
+
+              </a>
+              <a href="https://www.linkedin.com/in/robert-qocharyan-92a112243/" target="_blank">
+                <img src="images/linkedin.png" width="24" alt="" />
+
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/twitter.png" width="24" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/behance.png" width="24" alt="" />
+              </a>
+            </div>
+
+          </div> <!-- /.footer__credits -->
+          <nav class="footer__nav">
+              <a class="footer__nav-link" href="#">Work</a>
+              <a class="footer__nav-link" href="#">about me</a>
+              <a class="footer__nav-link" href="#">blog</a>
+              <a class="footer__nav-link" href="#">contact</a>
+              <a data-modal="#modal_hire_me" class="footer__nav-link footer__nav-link--btn" href="#">Hire me</a>
+          </nav>
+        </div> <!-- /.footer__innner -->
+      </div><!-- /.conteiner -->
+    </footer>
+
+
+
+    <!-- Modals -->
+
+    <div class="modal" id="modal_project_1"  >
+      <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+          <img src="./images/xmark-solid.svg" alt="Close">
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img class="modal-work__photo" src="./images/web-site.png" alt="">
+              </div>
+              <div>
+                <img class="modal-work__photo" src="./images/web-site2.png" alt="">
+              </div>
+              <div>
+                <img class="modal-work__photo" src="./images/web-site3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Project title</h3>
+              <div class="modal-work__info">
+                category <span class="modal-work__info-divider">|</span> 2022
+              </div>
+            </div>
+
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Client:</div>
+              <div class="modal-work__client-company">Creative Agency</div>
+            </div>
+
+            <div class="modal-work__text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+            </div>
+
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img src="./images/chevron-left-solid.svg" height="11" alt="">
+                Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next
+                <img src="./images/chevron-right-solid.svg" height="11" alt="">
+              </button>
+            </div>
+
+          </div><!-- /.modal-work__content -->
+        </div><!-- /.modal-work -->
+
+      </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <div class="modal" id="modal_project_2"  >
+      <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+          <img src="./images/xmark-solid.svg" alt="Close">
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img class="modal-work__photo" src="./images/ist1.png" alt="">
+              </div>
+              <div>
+                <img class="modal-work__photo" src="./images/List2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Project title</h3>
+              <div class="modal-work__info">
+                category <span class="modal-work__info-divider">|</span> 2022
+              </div>
+            </div>
+
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Client:</div>
+              <div class="modal-work__client-company">Creative Agency</div>
+            </div>
+
+            <div class="modal-work__text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+            </div>
+
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img src="./images/chevron-left-solid.svg" height="11" alt="">
+                Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next
+                <img src="./images/chevron-right-solid.svg" height="11" alt="">
+              </button>
+            </div>
+
+          </div><!-- /.modal-work__content -->
+        </div><!-- /.modal-work -->
+
+      </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+
+
+
+
+    <div class="modal" id="modal_resume" >
+      <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+         
+          <img src="./images/xmark-solid.svg" alt="Close">
+        </button>
+
+        <div class="modal__content">
+            <h3 class="modal__title text__center" >Resume</h3>
+
+            <div class="text__center">
+                  <a class="btn btn--thin" href="#">Download pdf</a>
+                  <a class="btn btn--thin" href="#">Print</a>
+            </div>
+
+            <div class="timeline">
+              <!-- <div class="timeline__col timeline__col--left">
+                    <h4 class="timeline__title">Experience</h4>
+
+
+                    <div class="timeline__item">
+                      <time datetime="10-07-2022" class="timeline__date">2019- <b>Present</b> </time>
+                      <h5 class="timeline__subtitle">Frelancer</h5>
+                      <div class="timeline__position">Informatics and Applied Mathematics</div>
+                      <div class="timeline__text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                      </div>
+                    </div>
+
+                    
+                    <div class="timeline__item">
+                      <time datetime="10-07-2022" class="timeline__date">2019- <b>Present</b> </time>
+                      <h5 class="timeline__subtitle">Frelancer</h5>
+                      <div class="timeline__position">Informatics and Applied Mathematics</div>
+                      <div class="timeline__text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                      </div>
+                    </div>
+
+                    
+                    <div class="timeline__item">
+                      <time datetime="10-07-2022" class="timeline__date">2019- <b>Present</b> </time>
+                      <h5 class="timeline__subtitle">Frelancer</h5>
+                      <div class="timeline__position">Informatics and Applied Mathematics</div>
+                      <div class="timeline__text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                      </div>
+                    </div>
+
+                    
+                    <div class="timeline__item">
+                      <time datetime="10-07-2022" class="timeline__date">2019- <b>Present</b> </time>
+                      <h5 class="timeline__subtitle">Frelancer</h5>
+                      <div class="timeline__position">Informatics and Applied Mathematics</div>
+                      <div class="timeline__text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                      </div>
+                    </div>
+              </div> -->
+              <div class="timeline__col timeline__col--right">
+                  <h4 class="timeline__title">education</h4>
+
+
+                  
+                  <div class="timeline__item">
+                    <time datetime="10-07-2022" class="timeline__date">2020-...</time>
+                    <h5 class="timeline__subtitle">Bachelor Of Science: Informatics And Applied Mathematics</h5>
+                    <div class="timeline__position">Yerevan State University</div>
+                  </div>
+
+                <h4 class="timeline__title">Certificate</h4>
+                  
+                  <!-- <div class="timeline__item">
+                    <time datetime="10-07-2022" class="timeline__date">May/2021-JavaScript ColibriLab </time>
+                    <h5 class="timeline__subtitle">Training Center 3-month</h5>
+                  </div> -->
+                  
+                  <div class="timeline__item">
+                    <time datetime="10-07-2022" class="timeline__date">Dec/2019-C++</time>
+                    <h5 class="timeline__subtitle">Edu2022/2-month</h5>
+                  </div>
+
+                  <h4 class="timeline__title">Skills</h4>
+
+                  <div class="progress-bar">
+
+                    <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                       HTML
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        HTML5
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        CSS
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        CSS3
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        Less
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        Sass/Scss
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        JavaScript
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                       TypeScript
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        JQuery
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 50%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        React
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__left">
+                      <div class="progress-bar__title">
+                        Redux
+                      </div>
+                    </div>
+                    <div class="progress-bar__right">
+                      <div class="progress-bar__bar">
+                        <div class="progress-bar__progress" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div> <!-- /.progress-bar -->
+
+
+
+                <!-- <h4 class="timeline__title">Awards</h4> -->
+                <h4 class="timeline__title">Languages</h4>
+
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">
+                      Armenian
+                    </div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 100%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">
+                      Russian
+                    </div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">
+                      English
+                    </div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 50%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="timeline__item">
+                  <time datetime="10-07-2022" class="timeline__date">2018 </time>
+                  <h5 class="timeline__subtitle">Frelancer</h5>
+                  <div class="timeline__position">Informatics and Applied Mathematics</div>
+                  <div class="timeline__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                  </div>
+                </div> -->
+
+
+                <!-- <div class="timeline__item">
+                  <time datetime="10-07-2022" class="timeline__date">2018 </time>
+                  <h5 class="timeline__subtitle">Frelancer</h5>
+                  <div class="timeline__position">Informatics and Applied Mathematics</div>
+                  <div class="timeline__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and .</p>
+                  </div>
+                </div> -->
+
+
+              </div><!-- /.timeline__col -->
+
+
+            </div><!-- /.timeline -->
+
+            <div class="text__center">
+              <a class="btn" href="#">Hire me</a>
+            </div>
+        </div><!-- /.modal__content -->
+
+      
+      </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal" id="modal_hire_me" >
+      <div class="modal__dialog modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+          <img src="./images/xmark-solid.svg" alt="Close">
+        </button>
+
+
+
+            <div class="contact">
+              <div class="contact__left">
+                  <h3 class="modal__title mb-0" >Lets Talk</h3>
+
+                  <h4 class="modal__subtitle">
+                    Coll me or send me a request
+                  </h4>
+
+                  <ul class="contact__info">
+                    <li class="contact__info-item">
+                      <img class="contact__info-icon" src="./images/phone-solid.svg" width="12" alt="">
+                      (+374)-94-381-555
+                    </li>
+                    <li class="contact__info-item">
+                      <img class="contact__info-icon" src="./images/envelope-solid.svg" width="12px" alt="">
+                      robqocharyan@mail.ru
+                    </li>
+                  </ul>
+
+
+                  <form class="form" action="/" method="post">
+                    <div class="form__group">
+                      <label class="form__label" for="input-email">Adress e-mail</label>
+                      <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form__group">
+                      <label class="form__label" for="input-text">Request</label>
+                      <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                    </div>
+
+
+                    <div class="text__right">
+                        <button class="btn" type="submit">Send</button>
+                    </div>
+
+                  </form>
+
+              </div><!-- /.contact__left -->
+            </div><!-- /.contact -->
+
+
+      
+      </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- JS -->
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>
