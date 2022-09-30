@@ -53,12 +53,26 @@
     &:hover{
         transform: translateY(-3px);
     }
+    @media @mobile{
+        width: 24px;
+        height: 29px;
+        position: absolute;
+        top: 2rem;
+        right: 30rem;
+        z-index: 1;
+        transition: transform 0.2s linear;
+    }
+    
 }
 
 
 
 .modal__content{
     padding: 5rem 1rem;
+    @media @mobile{
+        padding: 0;
+        width: 330px;
+    }
 
 }
 
@@ -68,6 +82,10 @@
     color: @black;
     font-weight: 700;
     margin-bottom: 3.6rem;
+    @media @mobile{
+    font-size: 1.5rem;
+        
+    }
 }
 
 .modal__subtitle{
@@ -75,4 +93,15 @@
     font-size: 1.06rem;
     color: @black;
     font-weight: 400;
+    @media @mobile{
+        font-size: .8rem;
+            
+        }
+}
+
+.resume{
+    @media @mobile{
+       margin-top: 35px;
+            
+        }
 }

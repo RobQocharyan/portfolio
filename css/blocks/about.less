@@ -46,6 +46,10 @@
         margin-right: auto;
     }
 
+    @media @mobile-small{
+        text-align: left; 
+        }
+
    
 }
 
@@ -100,14 +104,18 @@
     font-size: 3rem;
     color: @black;
     font-weight: 700;
-
+    @media @mobile-small{
+        font-size: 2rem;
+        text-align: left; 
+        width: 200px;
+     }
     @media @notebook{
         font-size: 2.5rem;
     }
 
     @media @mobile{
         font-size: 2rem;
-        width: 600px;
+       max-width: 600px;
         text-align: center;
     }
 
@@ -122,7 +130,10 @@
     line-height: 1.1;
     color: fade(@black,15%);
     font-weight: 700;
-
+    @media @mobile-small{
+        font-size: 3rem;
+        margin-bottom: 5px;
+        }
     @media @notebook{
         font-size: 4rem;
     }
@@ -145,5 +156,12 @@
         font-size: 1rem;
         width: 500px;
         justify-content: center;
+    }
+    p{
+        @media @mobile{
+            font-size: .8rem;
+            width: 330px;
+            justify-content: center;
+        }
     }
 }
